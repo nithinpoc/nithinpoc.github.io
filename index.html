@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website 1</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <h1 id="visitor_id">No Visitor ID</h1>
 </body>
 <script>
     // Initialize the agent on page load.
@@ -18,7 +18,7 @@
       .then(fp => fp.get())
       .then(result => {
         const visitorId = result.visitorId
-        console.log(visitorId)
+        document.getElementById('visitor_id').innerHTML = "This is your FingerprintJs VisitorID" + visitorId;
       })
   </script>
 </html>
