@@ -16,9 +16,9 @@ console.log(Visitor_ID)
 }
 const disVisID = document.createElement("h1");
 const node = document.createTextNode("This is your FingerprintJs VisitorID: " + Visitor_ID);
-disVisID.appendChiled(node);
+disVisID.appendChild(node);
 document.body.appendChild(disVisID);
-document.getElementById('visitor_id').innerHTML = "This is your FingerprintJs VisitorID: " + Visitor_ID;
+// document.getElementById('visitor_id').innerHTML = "This is your FingerprintJs VisitorID: " + Visitor_ID;
 function setCookie(name, value, daysToLive) {
     let cookie = name + "=" + encodeURIComponent(value);
     localStorage.setItem(name,value)
