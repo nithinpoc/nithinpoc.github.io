@@ -16,7 +16,7 @@ function setCookie(name, value, daysToLive) {
     let cookie = name + "=" + encodeURIComponent(value);
     localStorage.setItem(name,value)
     if(typeof daysToLive === "number") {
-        cookie += "; max-age=" + (daysToLive*24*60*60) + ";SameSite=None";
+        cookie += "; max-age=" + (daysToLive*24*60*60) + ";SameSite=None;secure";
         document.cookie = cookie;
     }
 }
