@@ -1,5 +1,5 @@
     let Visitor_ID = getCookie('Visitor_ID');
-console.log(Visitor_ID)
+console.log("I'm from git ", + Visitor_ID)
  if (Visitor_ID === null || localStorage.getItem("Visitor_ID") == null) {
     if (Visitor_ID != null) localStorage.setItem("Visitor_ID",Visitor_ID)
     else{
