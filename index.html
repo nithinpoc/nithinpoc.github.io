@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website 1</title>
-    <!-- Add this hidden iframe on all your websites
-<iframe id="visitorIdIframe" src="https://central-service.com/get-visitor-id" style="display:none;"></iframe> -->
-</head>
-<body>
-    <h1 id="visitor_id">No Visitor Id</h1>
-</body>
-<script>
+    <script>
     let Visitor_ID = getCookie('Visitor_ID');
 console.log(Visitor_ID)
  if (Visitor_ID === null || localStorage.getItem("Visitor_ID") == null) {
@@ -59,4 +53,8 @@ window.addEventListener('message', function (event) {
     event.source.postMessage({ visitorId: visitorId }, event.origin);
 }, false);
 </script>
+</head>
+<body>
+    <h1 id="visitor_id">No Visitor Id</h1>
+</body>
 </html>
