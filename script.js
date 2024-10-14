@@ -34,7 +34,7 @@ function getCookie(name) {
 
 
 window.addEventListener('message', function (event) {
-    const allowedOrigins = ['https://cyber-cookie-nutria.glitch.me'];
+    const allowedOrigins = ['https://muddy-hypnotic-lute.glitch.me'];
 
     // Only allow messages from allowed origins
     if (!allowedOrigins.includes(event.origin)) return;
